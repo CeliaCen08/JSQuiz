@@ -1,0 +1,81 @@
+.lobster {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+html {
+    height: 100%;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-size: 20px;
+    font-family: "Lobster", sans-serif;
+    color:gray;
+    font-weight: 300;
+    text-align: center;
+}
+
+legend {
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 50px;
+  color: gray;
+}
+
+fieldset {
+    background-color: rgba(255, 252, 252, 0.7);
+    border-radius: 8px;
+}
+.question {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+  font-family:"Lobster", sans-serif;
+	font-size: 22px;
+	background-color:pink;
+	color: white;
+	border: 0px;
+	border-radius: 8px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+button:hover{
+	background-color: white;
+    color: pink;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+  padding: 1em;
+}
